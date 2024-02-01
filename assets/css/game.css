@@ -107,3 +107,11 @@
 .winning-message.show {
   display: flex;
 }
+.btn-container button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: var(--dark_blue);
+  cursor: pointer;
+  color: #fff;
+}
