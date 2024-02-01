@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/game.css" />
+    <script defer src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header role="header" class="header">
+      <div class="heading">
+        <h2>Tic Tac Toe</h2>
+        <p>
+          Purpose: Play fun Tic Tac Toe games with two players of your choice.
+        </p>
+      </div>
+      <a href="https://github.com/Praneep-BRS/Tic-Tac-Toe" target="_blank">
+        Git Repo
+      </a>
+    </header>
+    <!--Main-->
+    <main role="main" class="container pt-5">
+      <div class="form-group">
+        <div class="form-item d-flex">
+          <input
+            type="text"
+            placeholder="player one name"
+            id="playerOne"
+            autocomplete="off"
+            class="form-control" />
+          <img class="game-icon" src="assets/images/crs.png" alt="cross-icon" />
+        </div>
+        <div class="form-item d-flex">
+          <input
+            type="text"
+            placeholder="player two name"
+            id="playerTwo"
+            autocomplete="off"
+            class="form-control" />
+          <img class="game-icon" src="assets/images/cr.png" alt="nought-icon" />
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btns btn-lg btn-secondary" id="startGame">
+          Start Game
+        </button>
+      </div>
+
+      <section id="tic-tac-toe">
+        <div class="game-board" id="game-board">
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+        </div>
+        <div class="winning-message" id="winningMessage">
+          <div data-winning-message-text></div>
+          <button id="restartButton" class="btn btn-lg btn-secondary">
+            Reset
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <ul class="color-palette">
+        <li class="palette-box" onclick="setTheme('#1a4b84')"></li>
+        <li class="palette-box" onclick="setTheme('#991e14')"></li>
+        <li class="palette-box" onclick="setTheme('#fead06')"></li>
+      </ul>
+    </footer>
+  </body>
+</html>
